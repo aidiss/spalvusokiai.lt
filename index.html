@@ -8,6 +8,10 @@
         <title>Spalvų Šokiai</title>
 
         <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.1/dist/js/lightgallery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-thumbnail/1.1.0/lg-thumbnail.js"></script>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.1/dist/js/lg-fullscreen.min.js"></script> -->
     </head>
 
     <body>
@@ -32,8 +36,8 @@
 
         <header style="height: 400px;">
             <h1 class="title">Spalvų šokiai</h1>
-            <h2 class="subtitle">Meno ugdymo užsiėmimai 4-6 metų vaikams</p></h2>
-            <a class="scroll-down" href="#"></a>
+            <h2 class="subtitle">Kūrybiniai užsiėmimai 4-6 metų vaikams</p></h2>
+            <!-- <a class="scroll-down" href="#"></a> -->
 
         </header>
         <!-- <img style="width: 100%; height: auto; margin: -150px 300px -200px 0;" src="https://scontent.fkun1-1.fna.fbcdn.net/v/t1.0-9/45871546_681919782178770_6903602883946610688_o.jpg?_nc_cat=110&_nc_ht=scontent.fkun1-1.fna&oh=69f83a8cec4f481edefd71d20df69cc7&oe=5CFCEAE0"> -->
@@ -43,16 +47,6 @@
                 <div class="container container-small">
                     <h1>Užsiėmimai</h1>
                     <div class="panel-body">
-                        <p>
-                            Kokios spalvos vėjas, rūkas, saulės spinduliai?.. O svajonės, liūdesys, apkabinimas? O
-                            miegas turi spalvą? O mėgstamiausia pasaka? Spalvos visur aplink mus, kiekviena su savo
-                            nuotaika, charakteriu ir norais. Jos draugauja, aikštyjasi, šnabždasi, rėkia,
-                            kartais ramina, kartais suteikia jėgų. Gyventi spalvų pasaulyje be galo smagu, bet kartais
-                            tam reikia drąsos... O kartais reikia tylos, kad išgirstume nedrąsaus, švelnučio Spalvuko
-                            nuostabią, stebuklingą istoriją... O šėldami atrasime
-                            žaižaruojantį Spalviūkštį, kuris neįtikėtinu greičiu nuneš mus į fastastiškiausių sutvėrimų
-                            pasaulį!
-                        </p>
                         <p>
                             Ar norėtumėt, kad Jūsų vaikas susidraugautų su spalvom? Išgirstų, ką jos kalba, pajustų jų
                             nuotaikas? Ir nejučia suvoktų, kad kūryba suteikia laisvės... Kad galima kurti būnant beveik
@@ -64,6 +58,16 @@
                             ir paleisti...
                         </p>
                         <button class="button-primary">Daugiau</button>
+                        <!-- <p>
+                            Kokios spalvos vėjas, rūkas, saulės spinduliai?.. O svajonės, liūdesys, apkabinimas? O
+                            miegas turi spalvą? O mėgstamiausia pasaka? Spalvos visur aplink mus, kiekviena su savo
+                            nuotaika, charakteriu ir norais. Jos draugauja, aikštyjasi, šnabždasi, rėkia,
+                            kartais ramina, kartais suteikia jėgų. Gyventi spalvų pasaulyje be galo smagu, bet kartais
+                            tam reikia drąsos... O kartais reikia tylos, kad išgirstume nedrąsaus, švelnučio Spalvuko
+                            nuostabią, stebuklingą istoriją... O šėldami atrasime
+                            žaižaruojantį Spalviūkštį, kuris neįtikėtinu greičiu nuneš mus į fastastiškiausių sutvėrimų
+                            pasaulį!
+                        </p> -->
                     </div>
                 </div>
             </section>
@@ -198,8 +202,21 @@
                             <button class="button-primary">Daugiau</button>
                         </div>
 
-                    </div>
+
+
+                <div id="animated-thumbnials">
+                    <a href="media/agnes/20170509_150940.jpg">
+                        <img src="media/agnes/T_20170509_150940.jpg">
+                    </a>
+                    <a href="media/agnes/20180724_135757.jpg">
+                        <img src="media/agnes/T_20180724_135757.jpg">
+                    </a>
+                </div>
+
+                </div>
+
                 </section>
+                
                 <section id="getting-started" class="section-tertiary">
                     <div class="container container-small">
                         <!-- Begin Mailchimp Signup Form -->
@@ -278,5 +295,16 @@
             </footer>
         </div>
     </body>
+                <script>
+                    
 
+
+    lightGallery(document.getElementById('animated-thumbnials'), {
+        thumbnail: true,
+        animateThumb: false,
+        showThumbByDefault: false
+    }); 
+
+
+                </script>
 </html>
