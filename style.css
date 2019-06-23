@@ -18,11 +18,11 @@ header {
     background-image: url(media/agnes/20180724_135757.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
 
 }
 
 nav {
-    position:fixed; 
+    position: fixed; 
     overflow: hidden;
 }
