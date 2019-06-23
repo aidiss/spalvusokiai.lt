@@ -3,6 +3,26 @@ body, h1, h2, h3, h4, h5 {
 }
 
 img {
-    object-fit:cover;
     width: 100%;
+
+}
+
+
+header div {
+    background-color:rgb(255,255,255,0.8);
+    padding: 40px;
+}
+
+
+header {
+    background-image: url(media/agnes/20180724_135757.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+nav {
+    position:fixed; 
+    overflow: hidden;
 }
