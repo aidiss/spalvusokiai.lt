@@ -26,3 +26,7 @@ nav {
     position: fixed; 
     overflow: hidden;
 }
+
+.package-name {
+    font-size: 25px
+}
